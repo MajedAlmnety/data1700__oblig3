@@ -1,7 +1,7 @@
 # data1700__oblig3
 - Oslomet brukernavn:maalm5569
 - GitHup  brukernavn: Majed_07
-- GitHop repo URL://github.com/MajedAlmnety/data1700__oblig3.git
+- GitHop repo URL: https://github.com/MajedAlmnety/data1700__oblig3.git
 - Full navn: Majed Almnety
 
 Denne applikasjonen er et strømlinjeformet kinobillettbestillingssystem med to hovedkomponenter:
