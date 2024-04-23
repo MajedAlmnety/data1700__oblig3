@@ -1,0 +1,46 @@
+body {
+    background-color: #1f1f1f;
+    color: #fff;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.5);
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.75);
+}
+.navbar-dark .navbar-brand {
+    color: #fff;
+}
+.navbar-dark .navbar-toggler-icon {
+    background-color: #fff;
+}
+.form-control, .btn {
+    border-radius: 0;
+}
+.hero-section {
+    background-image: url('11.png');
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.hero-content {
+    padding: 0 20px;
+}
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}

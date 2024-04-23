@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Ticket Booking</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Cinema Ticket Booking</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Movies</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="hero-section">
+    <div class="hero-content">
+        <h1>Welcome to Cinema Ticket Booking</h1>
+        <p>Book your tickets now for an unforgettable movie experience!</p>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Cinema Ticket Booking Form</h2>
+            <form class="form">
+                <div class="form-group">
+                    <label for="filmer">Movie:</label>
+                    <select class="form-control" id="filmer">
+
+
+                        <option value="The Godfather">The Godfather</option>
+                        <option value="Casablanca">Casablanca</option>
+                        <option value="Pulp Fiction">Pulp Fiction</option>
+                        <option value="The Shawshank Redemption">The Shawshank Redemption</option>
+                        <option value="Citizen Kane">Citizen Kane</option>
+                        <option value="Schindler's List">Schindler's List</option>
+                        <option value="The Dark Knight">The Dark Knight</option>
+                        <option value="The Lord of the Rings: The Return of the King">The Lord of the Rings: The Return of the King</option>
+                        <option value="Forrest Gump">Forrest Gump</option>
+                        <option value="Inception">Inception</option>
+
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="antall">Antall</label>
+                    <input type="number" value="1" class="form-control" min="0" id="antall" />
+                    <label id="antallError"></label>
+                </div>
+                <div class="form-group">
+                    <label for="fornavn">Fornavn</label>
+                    <input type="text" class="form-control" id="fornavn" />
+                    <label id="fornavnError" ></label>
+                </div>
+                <div class="form-group">
+                    <label for="etternavn">Etternavn</label>
+                    <input type="text" class="form-control" id="etternavn" />
+                    <label id="etternavnError" ></label>
+                </div>
+                <div class="form-group">
+                    <label for="tel">Telfonnr</label>
+                    <input type="text" class="form-control" id="tel" />
+                    <label id="talError" ></label>
+                </div>
+
+                <div class="form-group">
+                    <label for="epost">E-post</label>
+                    <input type="text" class="form-control" id="epost" />
+                    <label id="epostError" > </label>
+                </div>
+
+
+            </form>
+            <button class="btn btn-success" onclick="submit()">Buy the tecket</button><br/>
+        </div>
+        <div class="col-md-6">
+            <h2>Booked Tickets</h2>
+            <table class="table table-dark">
+                <thead>
+                <tr>
+                    <th>Film</th>
+                    <th>Antall</th>
+                    <th>Fornavn</th>
+                    <th>Etternavn</th>
+                    <th>Telnr</th>
+                    <th>Epost</th>
+                </tr>
+                </thead>
+                <tbody id="billetter">
+
+                </tbody>
+
+            </table>
+            <button class="btn btn-danger" onclick=" slettAlleBilletter()">Delete All</button>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
