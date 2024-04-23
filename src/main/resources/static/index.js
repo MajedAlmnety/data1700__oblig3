@@ -42,7 +42,7 @@ function submit() {
         hasError = true;
     }
     if (billett.film === "") {
-        $("#filmError").text("Velg en film").css('color', 'red');  // Assuming you have this error element
+        $("#filmError").text("Velg en film").css('color', 'red'); 
         hasError = true;
     }
 
